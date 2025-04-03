@@ -2,44 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Algorithm Backtester</title>
+    <title>Backtest RSI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Trading Algorithm Backtester</h1>
+        <h1>Backtest RSI Indicator</h1>
         <form id="form">
-            <label for="symbol">Company Symbol:</label>
-            <input type="text" id="symbol" required>
+            <label for="symbol">Symbol:</label>
+            <input type="text" id="symbol" name="symbol" required>
             <label for="startDate">Start Date:</label>
-            <input type="date" id="startDate" required>
+            <input type="date" id="startDate" name="startDate" required>
             <label for="endDate">End Date:</label>
-            <input type="date" id="endDate" required>
+            <input type="date" id="endDate" name="endDate" required>
             <button type="submit">Run Backtest</button>
         </form>
         <div id="results"></div>
     </div>
-    <script src="script.js"></script>
-</body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Backtest RSI</title>
-</head>
-<body>
-    <form id="form">
-        <label for="symbol">Symbol:</label>
-        <input type="text" id="symbol" name="symbol" required>
-        <label for="startDate">Start Date:</label>
-        <input type="date" id="startDate" name="startDate" required>
-        <label for="endDate">End Date:</label>
-        <input type="date" id="endDate" name="endDate" required>
-        <button type="submit">Run Backtest</button>
-    </form>
-    <div id="results"></div>
-
     <script src="script.js"></script>
 </body>
 </html>
