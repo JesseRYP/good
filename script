@@ -13,7 +13,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
 async function fetchMarketData(symbol, startDate, endDate) {
     const apiKey = 'd72d6343c53b5d238621bf290800c277';
-    const url = `https://api.marketstack.com/v1/eod?access_key=${apiKey}&symbols=${symbol}&date_from=${startDate}&date_to=${endDate}`;
+    const url = `https://api.marketstack.com/v1/eod?access_key=${d72d6343c53b5d238621bf290800c277}&symbols=${symbol}&date_from=${startDate}&date_to=${endDate}`;
     const response = await fetch(url);
     const json = await response.json();
     return json.data;
