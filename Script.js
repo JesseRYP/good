@@ -8,6 +8,9 @@ document.getElementById('form').addEventListener('submit', function(event) {
         const rsiData = calculateRSI(data);
         const results = runBacktest(rsiData);
         displayResults(results);
+    }).catch(error => {
+        console.error("Error fetching market data: ", error);
+        document.getElementById('results').innerHTML = '<p style="color: red;">Failed to fetch market data. Please try again later.</p>';
     });
 });
 
